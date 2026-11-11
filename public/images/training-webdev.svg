@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="web-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE5D7" />
+      <stop offset="100%" stop-color="#D6CEBD" />
+    </linearGradient>
+    <filter id="web-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0A0A0A" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#web-bg)" />
+
+  <g transform="translate(110, 70)" filter="url(#web-shadow)">
+    <!-- Browser IDE Frame -->
+    <rect width="580" height="360" rx="8" fill="#F8F6F1" stroke="#E5E1D8" stroke-width="2" />
+
+    <!-- Window top tabs -->
+    <rect width="580" height="42" rx="8" fill="#E8E2D4" />
+    <rect y="38" width="580" height="4" fill="#E8E2D4" />
+    <circle cx="28" cy="21" r="5" fill="#C5BDAC" />
+    <circle cx="44" cy="21" r="5" fill="#C5BDAC" />
+    <circle cx="60" cy="21" r="5" fill="#C5BDAC" />
+
+    <!-- Editor Tab -->
+    <rect x="88" y="10" width="130" height="32" rx="4" fill="#F8F6F1" />
+    <text x="108" y="30" fill="#0A0A0A" font-family="monospace" font-size="11" font-weight="600">index.tsx</text>
+
+    <!-- Side navigation inside editor -->
+    <rect x="0" y="42" width="130" height="318" fill="#F2EFE8" stroke="#E5E1D8" stroke-width="1" />
+    <line x1="20" y1="70" x2="80" y2="70" stroke="#C5BDAC" stroke-width="3" stroke-linecap="round" />
+    <line x1="30" y1="92" x2="100" y2="92" stroke="#B0A796" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="30" y1="110" x2="90" y2="110" stroke="#B0A796" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="30" y1="128" x2="75" y2="128" stroke="#B0A796" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="20" y1="155" x2="85" y2="155" stroke="#C5BDAC" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Code Editor Canvas -->
+    <g transform="translate(160, 75)">
+      <!-- Line 1: export default function App() { -->
+      <text x="0" y="16" fill="#0A0A0A" font-family="monospace" font-size="13" font-weight="600">export default function <tspan fill="#FFB800">App</tspan>() {</text>
+      <!-- Line 2: return ( -->
+      <text x="20" y="44" fill="#5C5C5C" font-family="monospace" font-size="13">return (</text>
+      
+      <!-- Nested Code Preview UI Card -->
+      <g transform="translate(40, 64)">
+        <rect width="320" height="150" rx="6" fill="#0A0A0A" />
+        <rect x="20" y="24" width="90" height="10" rx="2" fill="#FFB800" />
+        <rect x="20" y="44" width="180" height="6" rx="2" fill="#5C5C5C" />
+        <rect x="20" y="56" width="140" height="6" rx="2" fill="#5C5C5C" />
+        <!-- Button representation -->
+        <rect x="20" y="80" width="110" height="32" rx="4" fill="#FFB800" />
+        <text x="36" y="100" fill="#0A0A0A" font-family="system-ui, sans-serif" font-size="11" font-weight="700">EXPLORE TRACK</text>
+      </g>
+
+      <!-- Closing brackets -->
+      <text x="20" y="240" fill="#5C5C5C" font-family="monospace" font-size="13">);</text>
+      <text x="0" y="264" fill="#0A0A0A" font-family="monospace" font-size="13">}</text>
+    </g>
+  </g>
+</svg>

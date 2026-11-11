@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="python-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECE5D6" />
+      <stop offset="100%" stop-color="#D5CCBB" />
+    </linearGradient>
+    <filter id="python-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0A0A0A" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#python-bg)" />
+
+  <g transform="translate(110, 70)" filter="url(#python-shadow)">
+    <!-- Terminal / Notebook Frame -->
+    <rect width="580" height="360" rx="8" fill="#F8F6F1" stroke="#E5E1D8" stroke-width="2" />
+
+    <!-- Terminal header -->
+    <rect width="580" height="42" rx="8" fill="#0A0A0A" />
+    <rect y="38" width="580" height="4" fill="#0A0A0A" />
+    <circle cx="28" cy="21" r="5" fill="#5C5C5C" />
+    <circle cx="44" cy="21" r="5" fill="#5C5C5C" />
+    <circle cx="60" cy="21" r="5" fill="#FFB800" />
+    <text x="85" y="26" fill="#F8F6F1" font-family="monospace" font-size="12">python3 main.py — interactive shell</text>
+
+    <!-- Interactive script body -->
+    <g transform="translate(40, 75)">
+      <!-- Line 1: In [1]: import pandas as pd -->
+      <text x="0" y="20" fill="#0A0A0A" font-family="monospace" font-size="13" font-weight="600">
+        <tspan fill="#5C5C5C">In [1]:</tspan> import <tspan fill="#FFB800">pandas</tspan> as pd
+      </text>
+
+      <!-- Line 2: In [2]: df = pd.read_csv('skills_data.csv') -->
+      <text x="0" y="55" fill="#0A0A0A" font-family="monospace" font-size="13" font-weight="600">
+        <tspan fill="#5C5C5C">In [2]:</tspan> df = pd.read_csv(<tspan fill="#5C5C5C">'skills_data.csv'</tspan>)
+      </text>
+
+      <!-- Line 3: In [3]: def train_career(learner): -->
+      <text x="0" y="90" fill="#0A0A0A" font-family="monospace" font-size="13" font-weight="600">
+        <tspan fill="#5C5C5C">In [3]:</tspan> def <tspan fill="#FFB800">train_career</tspan>(learner):
+      </text>
+
+      <!-- Indented function line -->
+      <text x="50" y="125" fill="#0A0A0A" font-family="monospace" font-size="13">
+        return learner.empower(skills=[<tspan fill="#5C5C5C">'data'</tspan>, <tspan fill="#5C5C5C">'code'</tspan>])
+      </text>
+
+      <!-- Output card -->
+      <g transform="translate(0, 150)">
+        <rect width="500" height="95" rx="6" fill="#0A0A0A" />
+        <text x="20" y="32" fill="#FFB800" font-family="monospace" font-size="12">&gt;&gt;&gt; Result: Status 200 OK</text>
+        <text x="20" y="58" fill="#F8F6F1" font-family="monospace" font-size="12">&gt;&gt;&gt; Ready for next career milestone [100% Complete]</text>
+        <!-- Progress bar -->
+        <rect x="20" y="72" width="460" height="6" rx="3" fill="#3A3A3C" />
+        <rect x="20" y="72" width="380" height="6" rx="3" fill="#FFB800" />
+      </g>
+    </g>
+  </g>
+</svg>

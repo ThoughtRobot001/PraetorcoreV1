@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="cyber-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE5D9" />
+      <stop offset="100%" stop-color="#D4CCBC" />
+    </linearGradient>
+    <filter id="cyber-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0A0A0A" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cyber-bg)" />
+
+  <!-- Network Topology Lines -->
+  <g stroke="#C5BDAC" stroke-width="1.2" opacity="0.6">
+    <line x1="160" y1="120" x2="320" y2="240" />
+    <line x1="640" y1="120" x2="480" y2="240" />
+    <line x1="180" y1="380" x2="320" y2="260" />
+    <line x1="620" y1="380" x2="480" y2="260" />
+    <line x1="400" y1="100" x2="400" y2="180" />
+  </g>
+
+  <!-- Network Nodes -->
+  <circle cx="160" cy="120" r="14" fill="#F8F6F1" stroke="#0A0A0A" stroke-width="2" />
+  <circle cx="640" cy="120" r="14" fill="#F8F6F1" stroke="#0A0A0A" stroke-width="2" />
+  <circle cx="180" cy="380" r="14" fill="#F8F6F1" stroke="#FFB800" stroke-width="2" />
+  <circle cx="620" cy="380" r="14" fill="#F8F6F1" stroke="#FFB800" stroke-width="2" />
+  <circle cx="400" cy="100" r="12" fill="#0A0A0A" />
+
+  <!-- Central Security Shield Card -->
+  <g transform="translate(240, 90)" filter="url(#cyber-shadow)">
+    <rect width="320" height="320" rx="10" fill="#F8F6F1" stroke="#E5E1D8" stroke-width="2" />
+    
+    <!-- Shield emblem -->
+    <g transform="translate(160, 140)">
+      <!-- Outer Shield -->
+      <path d="M 0 -80 L 70 -50 C 70 30 40 85 0 105 C -40 85 -70 30 -70 -50 Z" fill="#0A0A0A" />
+      <!-- Inner Shield Accent -->
+      <path d="M 0 -68 L 56 -42 C 56 22 32 68 0 86 C -32 68 -56 22 -56 -42 Z" fill="#1C1C1E" />
+      
+      <!-- Center Lock Mechanism -->
+      <path d="M -16 -8 L -16 -22 C -16 -32 16 -32 16 -22 L 16 -8" fill="none" stroke="#FFB800" stroke-width="4.5" stroke-linecap="round" />
+      <rect x="-24" y="-8" width="48" height="36" rx="4" fill="#FFB800" />
+      <circle cx="0" cy="10" r="4" fill="#0A0A0A" />
+      <line x1="0" y1="12" x2="0" y2="18" stroke="#0A0A0A" stroke-width="2" />
+    </g>
+
+    <!-- Terminal security status bar below -->
+    <rect x="30" y="260" width="260" height="34" rx="4" fill="#0A0A0A" />
+    <circle cx="48" cy="277" r="4" fill="#FFB800" />
+    <text x="62" y="281" fill="#F8F6F1" font-family="monospace" font-size="11" letter-spacing="0.5">SYS_AUTH: ENCRYPTED (AES-256)</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "Tech Training & Services",
+  "description": "Tech training in data analytics, cybersecurity and software development, plus services for businesses. Home of Tech4Youth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

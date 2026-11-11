@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="data-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECE6D8" />
+      <stop offset="100%" stop-color="#D7CFBE" />
+    </linearGradient>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0A0A0A" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#data-bg)" />
+
+  <!-- Data Grid Backdrop -->
+  <g stroke="#C5BDAC" stroke-width="1" stroke-dasharray="2 4" opacity="0.4">
+    <line x1="100" y1="0" x2="100" y2="500" />
+    <line x1="300" y1="0" x2="300" y2="500" />
+    <line x1="500" y1="0" x2="500" y2="500" />
+    <line x1="700" y1="0" x2="700" y2="500" />
+    <line x1="0" y1="120" x2="800" y2="120" />
+    <line x1="0" y1="260" x2="800" y2="260" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+  </g>
+
+  <!-- Central Dashboard Panel -->
+  <g transform="translate(100, 70)" filter="url(#card-shadow)">
+    <rect width="600" height="360" rx="8" fill="#F8F6F1" stroke="#E5E1D8" stroke-width="2" />
+
+    <!-- Window top bar -->
+    <rect width="600" height="42" rx="8" fill="#EAE5D8" />
+    <rect y="38" width="600" height="4" fill="#EAE5D8" />
+    <circle cx="28" cy="21" r="5" fill="#C5BDAC" />
+    <circle cx="44" cy="21" r="5" fill="#C5BDAC" />
+    <circle cx="60" cy="21" r="5" fill="#C5BDAC" />
+    <rect x="90" y="14" width="140" height="14" rx="3" fill="#D8D0BF" />
+
+    <!-- Bar Chart Panel -->
+    <rect x="36" y="70" width="310" height="250" rx="6" fill="#FFFFFF" stroke="#E5E1D8" stroke-width="1" />
+    <text x="56" y="102" fill="#5C5C5C" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1">METRIC COHORTS / QUARTERLY</text>
+    
+    <g transform="translate(60, 130)">
+      <line x1="0" y1="140" x2="260" y2="140" stroke="#E5E1D8" stroke-width="1.5" />
+      <!-- Bar 1 -->
+      <rect x="15" y="60" width="22" height="80" rx="2" fill="#FFB800" />
+      <!-- Bar 2 -->
+      <rect x="55" y="30" width="22" height="110" rx="2" fill="#0A0A0A" />
+      <!-- Bar 3 -->
+      <rect x="95" y="80" width="22" height="60" rx="2" fill="#FCD66B" />
+      <!-- Bar 4 -->
+      <rect x="135" y="20" width="22" height="120" rx="2" fill="#FFB800" />
+      <!-- Bar 5 -->
+      <rect x="175" y="45" width="22" height="95" rx="2" fill="#0A0A0A" />
+      <!-- Bar 6 -->
+      <rect x="215" y="10" width="22" height="130" rx="2" fill="#FCD66B" />
+    </g>
+
+    <!-- Side metrics & trend line -->
+    <rect x="366" y="70" width="198" height="115" rx="6" fill="#FFFFFF" stroke="#E5E1D8" stroke-width="1" />
+    <text x="384" y="98" fill="#5C5C5C" font-family="system-ui, sans-serif" font-size="10" font-weight="600">PREDICTIVE TREND</text>
+    <polyline points="384,155 420,135 460,145 500,115 540,122" fill="none" stroke="#FFB800" stroke-width="3" stroke-linecap="round" />
+    <circle cx="540" cy="122" r="4" fill="#0A0A0A" />
+
+    <!-- Donut breakdown -->
+    <rect x="366" y="200" width="198" height="120" rx="6" fill="#FFFFFF" stroke="#E5E1D8" stroke-width="1" />
+    <g transform="translate(430, 260)">
+      <circle cx="0" cy="0" r="32" fill="none" stroke="#E5E1D8" stroke-width="14" />
+      <circle cx="0" cy="0" r="32" fill="none" stroke="#0A0A0A" stroke-width="14" stroke-dasharray="140 200" />
+      <circle cx="0" cy="0" r="32" fill="none" stroke="#FFB800" stroke-width="14" stroke-dasharray="60 200" stroke-dashoffset="-140" />
+    </g>
+    <rect x="480" y="240" width="60" height="8" rx="2" fill="#0A0A0A" />
+    <rect x="480" y="256" width="45" height="8" rx="2" fill="#FFB800" />
+    <rect x="480" y="272" width="52" height="8" rx="2" fill="#C5BDAC" />
+  </g>
+</svg>

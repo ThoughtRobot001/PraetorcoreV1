@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE6DA" />
+      <stop offset="50%" stop-color="#DFD8C6" />
+      <stop offset="100%" stop-color="#D0C8B3" />
+    </linearGradient>
+    <linearGradient id="warm-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB800" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFB800" stop-opacity="0.05" />
+    </linearGradient>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A0A0A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="800" height="1000" fill="url(#hero-bg)" />
+
+  <!-- Subtle architectural / grid lines of a tech training studio -->
+  <g stroke="#C5BDAC" stroke-width="1" stroke-dasharray="3 3" opacity="0.6">
+    <line x1="80" y1="0" x2="80" y2="1000" />
+    <line x1="720" y1="0" x2="720" y2="1000" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="800" x2="800" y2="800" />
+  </g>
+
+  <!-- Window sunlight ambiance -->
+  <polygon points="120,0 450,0 750,1000 350,1000" fill="url(#warm-accent)" />
+
+  <!-- Training Studio Table & Workstation composition -->
+  <g filter="url(#soft-shadow)">
+    <!-- Primary collaborative workspace desk -->
+    <rect x="120" y="440" width="560" height="340" rx="8" fill="#F8F6F1" stroke="#E5E1D8" stroke-width="2" />
+    <line x1="120" y1="520" x2="680" y2="520" stroke="#E5E1D8" stroke-width="1.5" />
+
+    <!-- Laptop workstation 1 (Data Analyst) -->
+    <g transform="translate(160, 470)">
+      <!-- Laptop Screen -->
+      <rect x="0" y="0" width="160" height="105" rx="5" fill="#0A0A0A" />
+      <rect x="6" y="6" width="148" height="93" rx="3" fill="#1C1C1E" />
+      <!-- Dashboard UI inside screen -->
+      <rect x="14" y="14" width="40" height="8" rx="2" fill="#FFB800" />
+      <rect x="60" y="14" width="30" height="8" rx="2" fill="#3A3A3C" />
+      <!-- Charts -->
+      <line x1="14" y1="78" x2="85" y2="78" stroke="#3A3A3C" stroke-width="1" />
+      <rect x="20" y="55" width="8" height="23" rx="1" fill="#FFB800" />
+      <rect x="34" y="42" width="8" height="36" rx="1" fill="#FCD66B" />
+      <rect x="48" y="60" width="8" height="18" rx="1" fill="#5C5C5C" />
+      <rect x="62" y="32" width="8" height="46" rx="1" fill="#FFB800" />
+      <!-- Sparkline -->
+      <polyline points="95,70 110,50 125,60 142,38" fill="none" stroke="#FCD66B" stroke-width="2" />
+      <!-- Laptop base -->
+      <path d="M -12 105 L 172 105 L 160 112 L -0 112 Z" fill="#D0C8B3" />
+    </g>
+
+    <!-- Laptop workstation 2 (Collaborator / Code) -->
+    <g transform="translate(380, 480)">
+      <rect x="0" y="0" width="180" height="120" rx="5" fill="#0A0A0A" />
+      <rect x="6" y="6" width="168" height="108" rx="3" fill="#121214" />
+      <!-- Code IDE syntax representation -->
+      <rect x="14" y="14" width="24" height="6" rx="2" fill="#FFB800" />
+      <rect x="42" y="14" width="50" height="6" rx="2" fill="#5C5C5C" />
+      <!-- Code lines -->
+      <line x1="14" y1="32" x2="70" y2="32" stroke="#FFB800" stroke-width="2" stroke-linecap="round" />
+      <line x1="24" y1="44" x2="110" y2="44" stroke="#FCD66B" stroke-width="2" stroke-linecap="round" />
+      <line x1="24" y1="56" x2="90" y2="56" stroke="#8E8E93" stroke-width="2" stroke-linecap="round" />
+      <line x1="34" y1="68" x2="140" y2="68" stroke="#E5E1D8" stroke-width="2" stroke-linecap="round" />
+      <line x1="24" y1="80" x2="80" y2="80" stroke="#FFB800" stroke-width="2" stroke-linecap="round" />
+      <line x1="14" y1="92" x2="60" y2="92" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" />
+      <!-- Laptop base -->
+      <path d="M -14 120 L 194 120 L 180 128 L -0 128 Z" fill="#D0C8B3" />
+    </g>
+
+    <!-- Collaborative learning materials: notebook, digital tablet, cup -->
+    <g transform="translate(200, 630)">
+      <!-- Notebook -->
+      <rect x="0" y="0" width="80" height="110" rx="4" fill="#FAF8F5" stroke="#E5E1D8" stroke-width="1.5" />
+      <line x1="12" y1="20" x2="68" y2="20" stroke="#D0C8B3" stroke-width="1" />
+      <line x1="12" y1="35" x2="68" y2="35" stroke="#D0C8B3" stroke-width="1" />
+      <line x1="12" y1="50" x2="52" y2="50" stroke="#D0C8B3" stroke-width="1" />
+      <!-- Pen -->
+      <rect x="90" y="10" width="4" height="90" rx="2" fill="#0A0A0A" />
+      <!-- Minimalist coffee mug -->
+      <circle cx="130" cy="50" r="16" fill="#E5E1D8" />
+      <circle cx="130" cy="50" r="12" fill="#D0C8B3" />
+    </g>
+  </g>
+
+  <!-- Learners presence (abstract minimal silhouette forms in collaborative session) -->
+  <g opacity="0.85">
+    <!-- Learner left (side angle) -->
+    <circle cx="210" cy="330" r="42" fill="#B5ADA0" />
+    <path d="M 140 430 Q 210 390 280 430" fill="none" stroke="#B5ADA0" stroke-width="28" stroke-linecap="round" />
+
+    <!-- Learner right (collaborating) -->
+    <circle cx="480" cy="340" r="44" fill="#A59D90" />
+    <path d="M 400 440 Q 480 400 560 440" fill="none" stroke="#A59D90" stroke-width="32" stroke-linecap="round" />
+  </g>
+
+  <!-- Clean focal badge: Tech Skills Training -->
+  <g transform="translate(260, 240)" filter="url(#soft-shadow)">
+    <rect x="0" y="0" width="280" height="48" rx="24" fill="#0A0A0A" />
+    <circle cx="28" cy="24" r="6" fill="#FFB800" />
+    <text x="44" y="29" fill="#F8F6F1" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">INTERACTIVE WORKSHOP SESSION</text>
+  </g>
+</svg>
